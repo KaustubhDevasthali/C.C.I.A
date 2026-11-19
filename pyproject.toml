@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "code-change-impact-analyzer"
+version = "0.1.0"
+description = "Inspect Git changes and estimate Python import impact offline"
+requires-python = ">=3.12"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.scripts]
+ccia = "ccia.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
